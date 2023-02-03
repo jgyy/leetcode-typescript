@@ -1,0 +1,23 @@
+{
+  "name": "leetcode-typescript",
+  "version": "1.0.0",
+  "description": "solving leetcode problems in typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgyy/leetcode-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgyy/leetcode-typescript/issues"
+  },
+  "homepage": "https://github.com/jgyy/leetcode-typescript#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.5"
+  }
+}
