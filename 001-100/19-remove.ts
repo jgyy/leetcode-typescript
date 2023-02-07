@@ -1,17 +1,17 @@
 /**
  * Definition for singly-linked list.
  */
-class ListNode {
+class ListNode19 {
     val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
+    next: ListNode19 | null
+    constructor(val?: number, next?: ListNode19 | null) {
         this.val = (val === undefined ? 0 : val)
         this.next = (next === undefined ? null : next)
     }
 }
 
 
-function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
+function removeNthFromEnd(head: ListNode19 | null, n: number): ListNode19 | null {
     let fast = head;
     let slow = head;
     for (let i = 0; i < n; i++) {
@@ -30,5 +30,5 @@ function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     return head;
 };
 
-const head = new ListNode(1,new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-console.log(removeNthFromEnd(head, 2));
+const head19 = new ListNode19(1,new ListNode19(2, new ListNode19(3, new ListNode19(4, new ListNode19(5)))));
+console.log(removeNthFromEnd(head19, 2));
