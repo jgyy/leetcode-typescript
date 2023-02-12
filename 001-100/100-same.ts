@@ -1,11 +1,11 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode100 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode100 | null
+    right: TreeNode100 | null
+    constructor(val?: number, left?: TreeNode100 | null, right?: TreeNode100 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
@@ -13,7 +13,7 @@ class TreeNode {
 }
 
 
-function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
+function isSameTree(p: TreeNode100 | null, q: TreeNode100 | null): boolean {
     if (p == null && q == null) {
         return true;
     }
@@ -26,10 +26,10 @@ function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
     return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
 };
 
-const root = new TreeNode(1);
-root.left = new TreeNode(2);
-root.right = new TreeNode(3);
-const root2 = new TreeNode(1);
-root2.left = new TreeNode(2);
-root2.right = new TreeNode(3);
-console.log(isSameTree(root, root2));
+const root100 = new TreeNode100(1);
+root100.left = new TreeNode100(2);
+root100.right = new TreeNode100(3);
+const root2 = new TreeNode100(1);
+root2.left = new TreeNode100(2);
+root2.right = new TreeNode100(3);
+console.log(isSameTree(root100, root2));
