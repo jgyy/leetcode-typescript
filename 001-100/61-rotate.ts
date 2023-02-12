@@ -1,16 +1,16 @@
 /**
  * Definition for singly-linked list.
  */
-class ListNode {
+class ListNode61 {
     val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
+    next: ListNode61 | null
+    constructor(val?: number, next?: ListNode61 | null) {
         this.val = (val === undefined ? 0 : val)
         this.next = (next === undefined ? null : next)
     }
 }
 
-function rotateRight(head: ListNode | null, k: number): ListNode | null {
+function rotateRight(head: ListNode61 | null, k: number): ListNode61 | null {
     if (head === null) return null;
     let n = 1;
     let cur = head;
@@ -29,5 +29,5 @@ function rotateRight(head: ListNode | null, k: number): ListNode | null {
     return newHead;
 };
 
-const head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-console.log(rotateRight(head, 2));
+const head61 = new ListNode61(1, new ListNode61(2, new ListNode61(3, new ListNode61(4, new ListNode61(5)))));
+console.log(rotateRight(head61, 2));
