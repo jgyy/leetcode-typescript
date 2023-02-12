@@ -1,18 +1,18 @@
 /**
  * Definition for singly-linked list.
  */
-class ListNode {
+class ListNode86 {
     val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
+    next: ListNode86 | null
+    constructor(val?: number, next?: ListNode86 | null) {
         this.val = (val === undefined ? 0 : val)
         this.next = (next === undefined ? null : next)
     }
 }
 
-function partition(head: ListNode | null, x: number): ListNode | null {
-    const dummy1 = new ListNode(0);
-    const dummy2 = new ListNode(0);
+function partition(head: ListNode86 | null, x: number): ListNode86 | null {
+    const dummy1 = new ListNode86(0);
+    const dummy2 = new ListNode86(0);
     let cur1 = dummy1;
     let cur2 = dummy2;
 
@@ -31,5 +31,5 @@ function partition(head: ListNode | null, x: number): ListNode | null {
     return dummy1.next;
 };
 
-const head = new ListNode(1, new ListNode(4, new ListNode(3, new ListNode(2, new ListNode(5, new ListNode(2))))));
-console.log(partition(head, 3));
+const head86 = new ListNode86(1, new ListNode86(4, new ListNode86(3, new ListNode86(2, new ListNode86(5, new ListNode86(2))))));
+console.log(partition(head86, 3));

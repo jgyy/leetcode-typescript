@@ -30,6 +30,10 @@ function addTwoNumbers(l1: ListNode2 | null, l2: ListNode2 | null): ListNode2 | 
     return dummyHead.next;
 };
 
-const listNode = new ListNode2(2, new ListNode2(4, new ListNode2(3)));
-const listNode2 = new ListNode2(5, new ListNode2(6, new ListNode2(4)));
+const listNode = new ListNode2();
+listNode.val = 2;
+listNode.next = new ListNode2(4, new ListNode2(3));
+const listNode2 = new ListNode2();
+listNode2.val = 5;
+listNode2.next = new ListNode2(6, new ListNode2(4));
 console.log(addTwoNumbers(listNode, listNode2));
