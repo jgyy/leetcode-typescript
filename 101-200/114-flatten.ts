@@ -1,11 +1,11 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode114 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode114 | null
+    right: TreeNode114 | null
+    constructor(val?: number, left?: TreeNode114 | null, right?: TreeNode114 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
@@ -15,7 +15,7 @@ class TreeNode {
 /**
  Do not return anything, modify root in-place instead.
  */
-function flatten(root: TreeNode | null): void {
+function flatten(root: TreeNode114 | null): void {
     if (root === null) {
         return;
     }
@@ -33,10 +33,10 @@ function flatten(root: TreeNode | null): void {
     console.log(root);
 };
 
-const root114 = new TreeNode(1);
-root114.left = new TreeNode(2);
-root114.left.left = new TreeNode(3);
-root114.left.right = new TreeNode(4);
-root114.right = new TreeNode(5);
-root114.right.right = new TreeNode(6);
+const root114 = new TreeNode114(1);
+root114.left = new TreeNode114(2);
+root114.left.left = new TreeNode114(3);
+root114.left.right = new TreeNode114(4);
+root114.right = new TreeNode114(5);
+root114.right.right = new TreeNode114(6);
 flatten(root114);
