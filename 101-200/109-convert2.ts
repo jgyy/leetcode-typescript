@@ -44,14 +44,14 @@ function sortedListToBST(head: ListNode | null): TreeNode109 | null {
     return root;
 };
 
-const head = new ListNode();
-head.val = -10;
-head.next = new ListNode();
-head.next.val = -3;
-head.next.next = new ListNode();
-head.next.next.val = 0;
-head.next.next.next = new ListNode();
-head.next.next.next.val = 5;
-head.next.next.next.next = new ListNode();
-head.next.next.next.next.val = 9;
-console.log(sortedListToBST(head));
+const head109 = new ListNode();
+head109.val = -10;
+head109.next = new ListNode();
+head109.next.val = -3;
+head109.next.next = new ListNode();
+head109.next.next.val = 0;
+head109.next.next.next = new ListNode();
+head109.next.next.next.val = 5;
+head109.next.next.next.next = new ListNode();
+head109.next.next.next.next.val = 9;
+console.log(sortedListToBST(head109));
