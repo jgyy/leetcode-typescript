@@ -1,22 +1,22 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode129 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode129 | null
+    right: TreeNode129 | null
+    constructor(val?: number, left?: TreeNode129 | null, right?: TreeNode129 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
     }
 }
 
-function sumNumbers(root: TreeNode | null): number {
+function sumNumbers(root: TreeNode129 | null): number {
     if (root === null) {
         return 0;
     }
-    const stack: [TreeNode, number][] = [[root, root.val]];
+    const stack: [TreeNode129, number][] = [[root, root.val]];
     let sum = 0;
     while (stack.length > 0) {
         const [node, num] = stack.pop()!;
@@ -33,9 +33,9 @@ function sumNumbers(root: TreeNode | null): number {
     return sum;
 };
 
-const root = new TreeNode(4);
-root.left = new TreeNode(9);
-root.right = new TreeNode(0);
-root.left.left = new TreeNode(5);
-root.left.right = new TreeNode(1);
-console.log(sumNumbers(root));
+const root129 = new TreeNode129(4);
+root129.left = new TreeNode129(9);
+root129.right = new TreeNode129(0);
+root129.left.left = new TreeNode129(5);
+root129.left.right = new TreeNode129(1);
+console.log(sumNumbers(root129));

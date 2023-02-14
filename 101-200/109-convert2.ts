@@ -1,10 +1,10 @@
 /**
  * Definition for singly-linked list.
  */
-class ListNode {
+class ListNode109 {
     val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
+    next: ListNode109 | null
+    constructor(val?: number, next?: ListNode109 | null) {
         this.val = (val === undefined ? 0 : val)
         this.next = (next === undefined ? null : next)
     }
@@ -24,7 +24,7 @@ class TreeNode109 {
     }
 }
 
-function sortedListToBST(head: ListNode | null): TreeNode109 | null {
+function sortedListToBST(head: ListNode109 | null): TreeNode109 | null {
     if (head === null) {
         return null;
     }
@@ -44,14 +44,14 @@ function sortedListToBST(head: ListNode | null): TreeNode109 | null {
     return root;
 };
 
-const head109 = new ListNode();
+const head109 = new ListNode109();
 head109.val = -10;
-head109.next = new ListNode();
+head109.next = new ListNode109();
 head109.next.val = -3;
-head109.next.next = new ListNode();
+head109.next.next = new ListNode109();
 head109.next.next.val = 0;
-head109.next.next.next = new ListNode();
+head109.next.next.next = new ListNode109();
 head109.next.next.next.val = 5;
-head109.next.next.next.next = new ListNode();
+head109.next.next.next.next = new ListNode109();
 head109.next.next.next.next.val = 9;
 console.log(sortedListToBST(head109));
