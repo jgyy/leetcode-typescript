@@ -1,22 +1,22 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode145 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode145 | null
+    right: TreeNode145 | null
+    constructor(val?: number, left?: TreeNode145 | null, right?: TreeNode145 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
     }
 }
 
-function postorderTraversal(root: TreeNode | null): number[] {
+function postorderTraversal(root: TreeNode145 | null): number[] {
     if (root === null) {
         return [];
     }
-    const stack: TreeNode[] = [root];
+    const stack: TreeNode145[] = [root];
     const result: number[] = [];
     while (stack.length > 0) {
         const node = stack.pop()!;
@@ -31,7 +31,7 @@ function postorderTraversal(root: TreeNode | null): number[] {
     return result;
 };
 
-const root = new TreeNode(1);
-root.right = new TreeNode(2);
-root.right.left = new TreeNode(3);
-console.log(postorderTraversal(root));
+const root145 = new TreeNode145(1);
+root145.right = new TreeNode145(2);
+root145.right.left = new TreeNode145(3);
+console.log(postorderTraversal(root145));

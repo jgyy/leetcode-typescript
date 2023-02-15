@@ -1,16 +1,16 @@
 /**
  * Definition for singly-linked list.
  */
-class ListNode {
+class ListNode148 {
     val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
+    next: ListNode148 | null
+    constructor(val?: number, next?: ListNode148 | null) {
         this.val = (val === undefined ? 0 : val)
         this.next = (next === undefined ? null : next)
     }
 }
 
-function sortList(head: ListNode | null): ListNode | null {
+function sortList(head: ListNode148 | null): ListNode148 | null {
     if (!head || !head.next) return head;
     let slow = head;
     let fast = head.next;
@@ -22,7 +22,7 @@ function sortList(head: ListNode | null): ListNode | null {
     slow.next = null;
     let left = sortList(head);
     let right = sortList(mid);
-    let h = new ListNode(0);
+    let h = new ListNode148(0);
     let res = h;
     while (left && right) {
         if (left.val < right.val) {
@@ -38,12 +38,12 @@ function sortList(head: ListNode | null): ListNode | null {
     return res.next;
 };
 
-const head = new ListNode();
-head.val = 4;
-head.next = new ListNode();
-head.next.val = 2;
-head.next.next = new ListNode();
-head.next.next.val = 1;
-head.next.next.next = new ListNode();
-head.next.next.next.val = 3;
-console.log(sortList(head));
+const head148 = new ListNode148();
+head148.val = 4;
+head148.next = new ListNode148();
+head148.next.val = 2;
+head148.next.next = new ListNode148();
+head148.next.next.val = 1;
+head148.next.next.next = new ListNode148();
+head148.next.next.next.val = 3;
+console.log(sortList(head148));
