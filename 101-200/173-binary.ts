@@ -1,11 +1,11 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode173 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode173 | null
+    right: TreeNode173 | null
+    constructor(val?: number, left?: TreeNode173 | null, right?: TreeNode173 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
@@ -22,13 +22,13 @@ class BSTIterator {
     nodes_sorted: number[];
     index: number;
 
-    constructor(root: TreeNode | null) {
+    constructor(root: TreeNode173 | null) {
         this.nodes_sorted = [];
         this.index = -1;
         this.inorder(root);
     }
 
-    private inorder(root: TreeNode | null): void {
+    private inorder(root: TreeNode173 | null): void {
         if (root === null) {
             return;
         }
@@ -47,17 +47,17 @@ class BSTIterator {
     }
 }
 
-const root = new TreeNode();
-root.val = 7;
-root.left = new TreeNode();
-root.left.val = 3;
-root.right = new TreeNode();
-root.right.val = 15;
-root.right.left = new TreeNode();
-root.right.left.val = 9;
-root.right.right = new TreeNode();
-root.right.right.val = 20;
-const obj = new BSTIterator(root);
+const root173 = new TreeNode173();
+root173.val = 7;
+root173.left = new TreeNode173();
+root173.left.val = 3;
+root173.right = new TreeNode173();
+root173.right.val = 15;
+root173.right.left = new TreeNode173();
+root173.right.left.val = 9;
+root173.right.right = new TreeNode173();
+root173.right.right.val = 20;
+const obj = new BSTIterator(root173);
 console.log(obj.next());
 console.log(obj.next());
 console.log(obj.hasNext());
