@@ -1,23 +1,23 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode199 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode199 | null
+    right: TreeNode199 | null
+    constructor(val?: number, left?: TreeNode199 | null, right?: TreeNode199 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
     }
 }
 
-function rightSideView(root: TreeNode | null): number[] {
+function rightSideView(root: TreeNode199 | null): number[] {
     if (root === null) {
         return [];
     }
     const result: number[] = [];
-    const queue: TreeNode[] = [];
+    const queue: TreeNode199[] = [];
     queue.push(root);
     while (queue.length > 0) {
         const size = queue.length;
@@ -37,9 +37,9 @@ function rightSideView(root: TreeNode | null): number[] {
     return result;
 };
 
-const root = new TreeNode(1);
-root.left = new TreeNode(2);
-root.right = new TreeNode(3);
-root.left.right = new TreeNode(5);
-root.right.right = new TreeNode(4);
-console.log(rightSideView(root));
+const root199 = new TreeNode199(1);
+root199.left = new TreeNode199(2);
+root199.right = new TreeNode199(3);
+root199.left.right = new TreeNode199(5);
+root199.right.right = new TreeNode199(4);
+console.log(rightSideView(root199));
