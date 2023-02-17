@@ -1,18 +1,18 @@
 /**
  * Definition for singly-linked list.
  */
-class ListNode {
+class ListNode206 {
     val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
+    next: ListNode206 | null
+    constructor(val?: number, next?: ListNode206 | null) {
         this.val = (val === undefined ? 0 : val)
         this.next = (next === undefined ? null : next)
     }
 }
 
-function reverseList(head: ListNode | null): ListNode | null {
-    let prev: ListNode | null = null;
-    let curr: ListNode | null = head;
+function reverseList(head: ListNode206 | null): ListNode206 | null {
+    let prev: ListNode206 | null = null;
+    let curr: ListNode206 | null = head;
     while (curr !== null) {
         const next = curr.next;
         curr.next = prev;
@@ -22,9 +22,9 @@ function reverseList(head: ListNode | null): ListNode | null {
     return prev;
 };
 
-const head = new ListNode(1);
-head.next = new ListNode(2);
-head.next.next = new ListNode(3);
-head.next.next.next = new ListNode(4);
-head.next.next.next.next = new ListNode(5);
-console.log(reverseList(head));
+const head206 = new ListNode206(1);
+head206.next = new ListNode206(2);
+head206.next.next = new ListNode206(3);
+head206.next.next.next = new ListNode206(4);
+head206.next.next.next.next = new ListNode206(5);
+console.log(reverseList(head206));
