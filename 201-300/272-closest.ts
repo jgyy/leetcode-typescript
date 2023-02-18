@@ -1,21 +1,21 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode272 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode272 | null
+    right: TreeNode272 | null
+    constructor(val?: number, left?: TreeNode272 | null, right?: TreeNode272 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
     }
 }
 
-function closestKValues(root: TreeNode | null, target: number, k: number): number[] {
+function closestKValues(root: TreeNode272 | null, target: number, k: number): number[] {
     const result: number[] = [];
-    const stack: TreeNode[] = [];
-    let node: TreeNode | null = root;
+    const stack: TreeNode272[] = [];
+    let node: TreeNode272 | null = root;
     while (node) {
         stack.push(node);
         node = node.left;
@@ -43,9 +43,9 @@ function closestKValues(root: TreeNode | null, target: number, k: number): numbe
     return result;
 };
 
-const root = new TreeNode(4);
-root.left = new TreeNode(2);
-root.right = new TreeNode(5);
-root.left.left = new TreeNode(1);
-root.left.right = new TreeNode(3);
-console.log(closestKValues(root, 3.714286, 2)); // [4, 3]
+const root272 = new TreeNode272(4);
+root272.left = new TreeNode272(2);
+root272.right = new TreeNode272(5);
+root272.left.left = new TreeNode272(1);
+root272.left.right = new TreeNode272(3);
+console.log(closestKValues(root272, 3.714286, 2)); // [4, 3]
