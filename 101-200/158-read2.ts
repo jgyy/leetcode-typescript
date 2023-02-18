@@ -5,7 +5,7 @@
  * };
  */
 
-var solution = function (read4: any) {
+var solution158 = function (read4: any) {
     const internalBuffer: any = [];
 
     return function (buf: string[], n: number): number {
@@ -32,4 +32,4 @@ const read4 = (buf4: string[]): number => {
 };
 const buf = Array(4).fill('');
 const n = 4;
-console.log(solution(read4)(buf, n));
+console.log(solution158(read4)(buf, n));

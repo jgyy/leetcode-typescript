@@ -5,7 +5,7 @@
  * };
  */
 
-var solution = function (read4: any) {
+var solution157 = function (read4: any) {
 
     return function (buf: string[], n: number): number {
         let readBytes = 0;
@@ -32,4 +32,4 @@ const read157 = (buf4: string[]): number => {
 };
 const buf157 = Array(4).fill('');
 const n157 = 4;
-console.log(solution(read157)(buf157, n157));
+console.log(solution157(read157)(buf157, n157));
