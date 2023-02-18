@@ -1,20 +1,20 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode250 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode250 | null
+    right: TreeNode250 | null
+    constructor(val?: number, left?: TreeNode250 | null, right?: TreeNode250 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
     }
 }
 
-function countUnivalSubtrees(root: TreeNode | null): number {
+function countUnivalSubtrees(root: TreeNode250 | null): number {
     let count = 0;
-    const traverse = (node: TreeNode | null): boolean => {
+    const traverse = (node: TreeNode250 | null): boolean => {
         if (node === null) {
             return true;
         }
@@ -36,10 +36,10 @@ function countUnivalSubtrees(root: TreeNode | null): number {
     return count;
 };
 
-const root = new TreeNode(5);
-root.left = new TreeNode(1);
-root.right = new TreeNode(5);
-root.left.left = new TreeNode(5);
-root.left.right = new TreeNode(5);
-root.right.right = new TreeNode(5);
-console.log(countUnivalSubtrees(root));
+const root250 = new TreeNode250(5);
+root250.left = new TreeNode250(1);
+root250.right = new TreeNode250(5);
+root250.left.left = new TreeNode250(5);
+root250.left.right = new TreeNode250(5);
+root250.right.right = new TreeNode250(5);
+console.log(countUnivalSubtrees(root250));
