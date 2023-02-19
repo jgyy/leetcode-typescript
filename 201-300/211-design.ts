@@ -1,8 +1,8 @@
 /**
- * Your WordDictionary object will be instantiated and called as such:
- * var obj = new WordDictionary()
- * obj.addWord(word)
- * var param_2 = obj.search(word)
+ * Your WordDictionary wordDictionaryect will be instantiated and called as such:
+ * var wordDictionary = new WordDictionary()
+ * wordDictionary.addWord(word)
+ * var param_2 = wordDictionary.search(word)
  */
 class WordDictionary {
     d: Map<number, Set<string>>;
@@ -45,11 +45,11 @@ class WordDictionary {
     }
 }
 
-const obj = new WordDictionary();
-obj.addWord('bad');
-obj.addWord('dad');
-obj.addWord('mad');
-console.log(obj.search('pad'));
-console.log(obj.search('bad'));
-console.log(obj.search('.ad'));
-console.log(obj.search('b..'));
+const wordDictionary = new WordDictionary();
+wordDictionary.addWord('bad');
+wordDictionary.addWord('dad');
+wordDictionary.addWord('mad');
+console.log(wordDictionary.search('pad'));
+console.log(wordDictionary.search('bad'));
+console.log(wordDictionary.search('.ad'));
+console.log(wordDictionary.search('b..'));
