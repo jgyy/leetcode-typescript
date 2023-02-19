@@ -1,20 +1,20 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode298 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode298 | null
+    right: TreeNode298 | null
+    constructor(val?: number, left?: TreeNode298 | null, right?: TreeNode298 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
     }
 }
 
-function longestConsecutive(root: TreeNode | null): number {
+function longestConsecutive(root: TreeNode298 | null): number {
     let max = 0;
-    const dfs = (node: TreeNode | null, parent: TreeNode | null, length: number) => {
+    const dfs = (node: TreeNode298 | null, parent: TreeNode298 | null, length: number) => {
         if (node === null) {
             return;
         }
@@ -27,13 +27,13 @@ function longestConsecutive(root: TreeNode | null): number {
     return max;
 };
 
-const root = new TreeNode(1);
-root.left = new TreeNode(2);
-root.right = new TreeNode(3);
-root.left.left = new TreeNode(4);
-root.left.right = new TreeNode(5);
-root.right.right = new TreeNode(6);
-root.left.right.left = new TreeNode(7);
-root.left.right.right = new TreeNode(8);
-root.left.right.right.right = new TreeNode(9);
-console.log(longestConsecutive(root)); // 4
+const root298 = new TreeNode298(1);
+root298.left = new TreeNode298(2);
+root298.right = new TreeNode298(3);
+root298.left.left = new TreeNode298(4);
+root298.left.right = new TreeNode298(5);
+root298.right.right = new TreeNode298(6);
+root298.left.right.left = new TreeNode298(7);
+root298.left.right.right = new TreeNode298(8);
+root298.left.right.right.right = new TreeNode298(9);
+console.log(longestConsecutive(root298)); // 4
