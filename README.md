@@ -4,4 +4,4 @@ solving leetcode problems in typescript
 
 ## leetcode-url
 
-<https://leetcode.com/problemset/all/?page=7>
+<https://leetcode.com/problemset/all/?page=8>

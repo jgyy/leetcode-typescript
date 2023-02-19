@@ -2,9 +2,9 @@
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
  */
-class NestedInteger {
+class NestedInteger339 {
     value: number;
-    valueArray: NestedInteger[];
+    valueArray: NestedInteger339[];
 
     constructor(value?: number) {
         this.value = value ? value : 0;
@@ -24,18 +24,18 @@ class NestedInteger {
         this.valueArray = [];
     };
 
-    add(elem: NestedInteger) {
+    add(elem: NestedInteger339) {
         this.valueArray.push(elem);
     };
 
-    getList(): NestedInteger[] {
+    getList(): NestedInteger339[] {
         return this.isInteger() ? [] : this.valueArray;
     };
 };
 
-function depthSum(nestedList: NestedInteger[]): number {
+function depthSum(nestedList: NestedInteger339[]): number {
     let sum = 0;
-    const dfs = (nestedList: NestedInteger[], depth: number) => {
+    const dfs = (nestedList: NestedInteger339[], depth: number) => {
         for (let i = 0; i < nestedList.length; i++) {
             if (nestedList[i].isInteger()) {
                 sum += nestedList[i].getInteger()! * depth;
@@ -48,7 +48,7 @@ function depthSum(nestedList: NestedInteger[]): number {
     return sum;
 };
 
-const nestedList = [new NestedInteger(1), new NestedInteger(1)];
-nestedList[0].add(new NestedInteger(1));
-nestedList[1].add(new NestedInteger(1));
-console.log(depthSum(nestedList));
+const nestedList339 = [new NestedInteger339(1), new NestedInteger339(1)];
+nestedList339[0].add(new NestedInteger339(1));
+nestedList339[1].add(new NestedInteger339(1));
+console.log(depthSum(nestedList339));
