@@ -1,10 +1,10 @@
 /**
  * Definition for singly-linked list.
  */
-class ListNode {
+class ListNode237 {
     val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
+    next: ListNode237 | null
+    constructor(val?: number, next?: ListNode237 | null) {
         this.val = (val === undefined ? 0 : val)
         this.next = (next === undefined ? null : next)
     }
@@ -13,7 +13,7 @@ class ListNode {
 /**
  Do not return anything, modify it in-place instead.
  */
-function deleteNode(node: ListNode | null): void {
+function deleteNode(node: ListNode237 | null): void {
     if (node === null) {
         return;
     }
@@ -22,8 +22,8 @@ function deleteNode(node: ListNode | null): void {
     console.log(node);
 };
 
-const head = new ListNode(4);
-head.next = new ListNode(5);
-head.next.next = new ListNode(1);
-head.next.next.next = new ListNode(9);
-deleteNode(head.next);
+const head237 = new ListNode237(4);
+head237.next = new ListNode237(5);
+head237.next.next = new ListNode237(1);
+head237.next.next.next = new ListNode237(9);
+deleteNode(head237.next);
