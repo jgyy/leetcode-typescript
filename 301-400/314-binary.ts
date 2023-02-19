@@ -1,23 +1,23 @@
 /**
  * Definition for a binary tree node.
  */
-class TreeNode {
+class TreeNode314 {
     val: number
-    left: TreeNode | null
-    right: TreeNode | null
-    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    left: TreeNode314 | null
+    right: TreeNode314 | null
+    constructor(val?: number, left?: TreeNode314 | null, right?: TreeNode314 | null) {
         this.val = (val === undefined ? 0 : val)
         this.left = (left === undefined ? null : left)
         this.right = (right === undefined ? null : right)
     }
 }
 
-function verticalOrder(root: TreeNode | null): number[][] {
+function verticalOrder(root: TreeNode314 | null): number[][] {
     if (!root) {
         return [];
     }
     const map = new Map<number, number[]>();
-    const queue: [TreeNode, number][] = [[root, 0]];
+    const queue: [TreeNode314, number][] = [[root, 0]];
     while (queue.length) {
         const [node, index] = queue.shift()!;
         if (map.has(index)) {
@@ -35,14 +35,14 @@ function verticalOrder(root: TreeNode | null): number[][] {
     return [...map.entries()].sort(([a], [b]) => a - b).map(([, v]) => v);
 };
 
-const root = new TreeNode();
-root.val = 3;
-root.left = new TreeNode();
-root.left.val = 9;
-root.right = new TreeNode();
-root.right.val = 20;
-root.right.left = new TreeNode();
-root.right.left.val = 15;
-root.right.right = new TreeNode();
-root.right.right.val = 7;
-console.log(verticalOrder(root));
+const root314 = new TreeNode314();
+root314.val = 3;
+root314.left = new TreeNode314();
+root314.left.val = 9;
+root314.right = new TreeNode314();
+root314.right.val = 20;
+root314.right.left = new TreeNode314();
+root314.right.left.val = 15;
+root314.right.right = new TreeNode314();
+root314.right.right.val = 7;
+console.log(verticalOrder(root314));
