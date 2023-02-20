@@ -1,16 +1,16 @@
 /**
  * Definition for singly-linked list.
  */
-class ListNode {
+class ListNode328 {
     val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
+    next: ListNode328 | null
+    constructor(val?: number, next?: ListNode328 | null) {
         this.val = (val === undefined ? 0 : val)
         this.next = (next === undefined ? null : next)
     }
 }
 
-function oddEvenList(head: ListNode | null): ListNode | null {
+function oddEvenList(head: ListNode328 | null): ListNode328 | null {
     if (!head) {
         return null;
     }
@@ -27,9 +27,9 @@ function oddEvenList(head: ListNode | null): ListNode | null {
     return head;
 };
 
-const head = new ListNode(1);
-head.next = new ListNode(2);
-head.next.next = new ListNode(3);
-head.next.next.next = new ListNode(4);
-head.next.next.next.next = new ListNode(5);
-console.log(oddEvenList(head));
+const head328 = new ListNode328(1);
+head328.next = new ListNode328(2);
+head328.next.next = new ListNode328(3);
+head328.next.next.next = new ListNode328(4);
+head328.next.next.next.next = new ListNode328(5);
+console.log(oddEvenList(head328));

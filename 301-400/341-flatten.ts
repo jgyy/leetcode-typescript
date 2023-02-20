@@ -2,9 +2,9 @@
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
  */
-class NestedInteger {
+class NestedInteger341 {
     value: number;
-    valueArray: NestedInteger[];
+    valueArray: NestedInteger341[];
 
     constructor(value?: number) {
         this.value = value ? value : 0;
@@ -24,11 +24,11 @@ class NestedInteger {
         this.valueArray = [];
     };
 
-    add(elem: NestedInteger) {
+    add(elem: NestedInteger341) {
         this.valueArray.push(elem);
     };
 
-    getList(): NestedInteger[] {
+    getList(): NestedInteger341[] {
         return this.isInteger() ? [] : this.valueArray;
     };
 };
@@ -43,17 +43,17 @@ class NestedIterator {
     private integers: number[];
     private position: number;
 
-    constructor(nestedList: NestedInteger[]) {
+    constructor(nestedList: NestedInteger341[]) {
         this.integers = [];
         this.position = 0;
 
-        const flatten = (list: NestedInteger[]) => {
+        const flatten = (list: NestedInteger341[]) => {
             for (let i = 0; i < list.length; i++) {
-                const nestedInteger = list[i];
-                if (nestedInteger.isInteger()) {
-                    this.integers.push(nestedInteger.getInteger()!);
+                const nestedInteger341 = list[i];
+                if (nestedInteger341.isInteger()) {
+                    this.integers.push(nestedInteger341.getInteger()!);
                 } else {
-                    flatten(nestedInteger.getList());
+                    flatten(nestedInteger341.getList());
                 }
             }
         };
@@ -70,8 +70,8 @@ class NestedIterator {
     }
 }
 
-const nestedList = [new NestedInteger(1), new NestedInteger(2), new NestedInteger(3)];
-const nestedIterator = new NestedIterator(nestedList);
+const nestedList341 = [new NestedInteger341(1), new NestedInteger341(2), new NestedInteger341(3)];
+const nestedIterator341 = new NestedIterator(nestedList341);
 const a: number[] = [];
-while (nestedIterator.hasNext()) a.push(nestedIterator.next());
+while (nestedIterator341.hasNext()) a.push(nestedIterator341.next());
 console.log(a);
