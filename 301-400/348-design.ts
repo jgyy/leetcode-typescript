@@ -38,11 +38,11 @@ class TicTacToe {
     }
 }
 
-const t = new TicTacToe(3);
-console.log(t.move(0, 0, 1));
-console.log(t.move(0, 2, 2));
-console.log(t.move(2, 2, 1));
-console.log(t.move(1, 1, 2));
-console.log(t.move(2, 0, 1));
-console.log(t.move(1, 0, 2));
-console.log(t.move(2, 1, 1));
+const ticTacToe = new TicTacToe(3);
+console.log(ticTacToe.move(0, 0, 1));
+console.log(ticTacToe.move(0, 2, 2));
+console.log(ticTacToe.move(2, 2, 1));
+console.log(ticTacToe.move(1, 1, 2));
+console.log(ticTacToe.move(2, 0, 1));
+console.log(ticTacToe.move(1, 0, 2));
+console.log(ticTacToe.move(2, 1, 1));
