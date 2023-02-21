@@ -12,7 +12,7 @@ class TreeNode230 {
     }
 }
 
-function kthSmallest(root: TreeNode230 | null, k: number): number {
+function kthSmallest230(root: TreeNode230 | null, k: number): number {
     const stack: TreeNode230[] = [];
     let node = root;
     while (node !== null || stack.length > 0) {
@@ -33,6 +33,6 @@ const root230 = new TreeNode230(3);
 root230.left = new TreeNode230(1);
 root230.right = new TreeNode230(4);
 root230.left.right = new TreeNode230(2);
-console.log(kthSmallest(root230, 1));
-console.log(kthSmallest(root230, 2));
-console.log(kthSmallest(root230, 3));
+console.log(kthSmallest230(root230, 1));
+console.log(kthSmallest230(root230, 2));
+console.log(kthSmallest230(root230, 3));
