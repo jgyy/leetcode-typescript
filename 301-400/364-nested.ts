@@ -2,9 +2,9 @@
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
  */
-class NestedInteger {
+class NestedInteger364 {
     value: number;
-    valueArray: NestedInteger[];
+    valueArray: NestedInteger364[];
 
     constructor(value?: number) {
         this.value = value ? value : 0;
@@ -24,16 +24,16 @@ class NestedInteger {
         this.valueArray = [];
     };
 
-    add(elem: NestedInteger) {
+    add(elem: NestedInteger364) {
         this.valueArray.push(elem);
     };
 
-    getList(): NestedInteger[] {
+    getList(): NestedInteger364[] {
         return this.isInteger() ? [] : this.valueArray;
     };
 };
 
-function depthSumInverse(nestedList: NestedInteger[]): number {
+function depthSumInverse(nestedList: NestedInteger364[]): number {
     const queue = [...nestedList];
     const depthSum = [];
     let depth = 0;
@@ -64,11 +64,11 @@ function depthSumInverse(nestedList: NestedInteger[]): number {
     return total;
 };
 
-const nestedInteger = new NestedInteger();
-nestedInteger.add(new NestedInteger(1));
-nestedInteger.add(new NestedInteger(1));
-const nestedInteger2 = new NestedInteger();
-nestedInteger2.add(new NestedInteger(2));
-nestedInteger2.add(new NestedInteger(2));
-nestedInteger.add(nestedInteger2);
-console.log(depthSumInverse([nestedInteger]));
+const nestedInteger364 = new NestedInteger364();
+nestedInteger364.add(new NestedInteger364(1));
+nestedInteger364.add(new NestedInteger364(1));
+const nestedInteger3642 = new NestedInteger364();
+nestedInteger3642.add(new NestedInteger364(2));
+nestedInteger3642.add(new NestedInteger364(2));
+nestedInteger364.add(nestedInteger3642);
+console.log(depthSumInverse([nestedInteger364]));

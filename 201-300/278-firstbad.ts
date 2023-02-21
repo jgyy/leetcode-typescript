@@ -5,7 +5,7 @@
  * };
  */
 
-var solution = function (isBadVersion: any) {
+const solution278 = function (isBadVersion: any) {
 
     return function (n: number): number {
         let left = 1;
@@ -27,4 +27,4 @@ const isBadVersion = (version: number): boolean => {
     return false;
 }
 
-console.log(solution(isBadVersion)(5)); // 4
+console.log(solution278(isBadVersion)(5)); // 4

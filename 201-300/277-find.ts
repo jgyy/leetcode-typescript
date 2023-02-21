@@ -5,7 +5,7 @@
  * };
  */
 
-var solution = function(knows: any) {
+const solution277 = function(knows: any) {
 
     return function(n: number): number {
         let candidate = 0;
@@ -33,4 +33,4 @@ const knows = (a: number, b: number): boolean => {
     return false;
 }
 
-console.log(solution(knows)(3)); // 0
+console.log(solution277(knows)(3)); // 0
