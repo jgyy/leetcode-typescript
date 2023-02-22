@@ -1,10 +1,10 @@
 /**
- * Your Solution object will be instantiated and called as such:
- * var obj = new Solution(nums)
+ * Your solution384 object will be instantiated and called as such:
+ * var obj = new solution384(nums)
  * var param_1 = obj.reset()
  * var param_2 = obj.shuffle()
  */
-class Solution {
+class solution384 {
     array: number[];
     original: number[];
 
@@ -28,7 +28,7 @@ class Solution {
     }
 }
 
-const solution = new Solution([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-console.log(solution.shuffle());
-console.log(solution.reset());
-console.log(solution.shuffle());
+const solution384solution384 = new solution384([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+console.log(solution384solution384.shuffle());
+console.log(solution384solution384.reset());
+console.log(solution384solution384.shuffle());
