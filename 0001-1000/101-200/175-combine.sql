@@ -1,4 +1,4 @@
-USE mysql;
+-- USE mysql;
 Create table If Not Exists Person (
     personId int,
     firstName varchar(255),

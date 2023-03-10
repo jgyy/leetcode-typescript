@@ -22,9 +22,9 @@ function sumOfLeftLeaves(root: TreeNode | null): number {
     return sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right);
 };
 
-const root = new TreeNode(3);
-root.left = new TreeNode(9);
-root.right = new TreeNode(20);
-root.right.left = new TreeNode(15);
-root.right.right = new TreeNode(7);
-console.log(sumOfLeftLeaves(root));
+const root404 = new TreeNode(3);
+root404.left = new TreeNode(9);
+root404.right = new TreeNode(20);
+root404.right.left = new TreeNode(15);
+root404.right.right = new TreeNode(7);
+console.log(sumOfLeftLeaves(root404));
