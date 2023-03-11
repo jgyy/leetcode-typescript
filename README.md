@@ -8,4 +8,6 @@ solving leetcode problems in typescript
 
 ## SQL number
 
-redo from 175
+start from 511, use mysql.
+
+mysql -u root -e "source ./sql/address.sql"
