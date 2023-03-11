@@ -8,4 +8,4 @@ solving leetcode problems in typescript
 
 ## SQL number
 
-511
+redo from 175
