@@ -53,5 +53,15 @@ insert into Students (id, name, department_id)
 values ('7', 'Daiana', '33');
 insert into Students (id, name, department_id)
 values ('11', 'Madelynn', '1');
+insert into Student (student_id, student_name)
+values ('1', 'Daniel');
+insert into Student (student_id, student_name)
+values ('2', 'Jade');
+insert into Student (student_id, student_name)
+values ('3', 'Stella');
+insert into Student (student_id, student_name)
+values ('4', 'Jonathan');
+insert into Student (student_id, student_name)
+values ('5', 'Will');
 SELECT *
 FROM Students;

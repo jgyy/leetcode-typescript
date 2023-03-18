@@ -6,7 +6,12 @@ Create table If Not Exists Users (
     role ENUM('client', 'driver', 'partner'),
     join_date date,
     favorite_brand varchar(10),
-    name varchar(30)
+    name varchar(40),
+    id int,
+    mail varchar(50),
+    user_name varchar(40),
+    credit int,
+    account int
 );
 Truncate table Users;
 insert into Users (user_id, banned, role)
@@ -41,5 +46,57 @@ insert into Users (user_id, name)
 values ('3', 'Maria');
 insert into Users (user_id, name)
 values ('4', 'James');
+insert into Users (id, name)
+values ('1', 'Alice');
+insert into Users (id, name)
+values ('2', 'Bob');
+insert into Users (id, name)
+values ('3', 'Alex');
+insert into Users (id, name)
+values ('4', 'Donald');
+insert into Users (id, name)
+values ('7', 'Lee');
+insert into Users (id, name)
+values ('13', 'Jonathan');
+insert into Users (id, name)
+values ('19', 'Elvis');
+insert into Users (user_id, name, mail)
+values ('1', 'Winston', 'winston@leetcode.com');
+insert into Users (user_id, name, mail)
+values ('2', 'Jonathan', 'jonathanisgreat');
+insert into Users (user_id, name, mail)
+values ('3', 'Annabelle', 'bella-@leetcode.com');
+insert into Users (user_id, name, mail)
+values ('4', 'Sally', 'sally.come@leetcode.com');
+insert into Users (user_id, name, mail)
+values ('5', 'Marwan', 'quarz#2020@leetcode.com');
+insert into Users (user_id, name, mail)
+values ('6', 'David', 'david69@gmail.com');
+insert into Users (user_id, name, mail)
+values ('7', 'Shapiro', '.shapo@leetcode.com');
+insert into Users (user_id, user_name, credit)
+values ('1', 'Moustafa', '100');
+insert into Users (user_id, user_name, credit)
+values ('2', 'Jonathan', '200');
+insert into Users (user_id, user_name, credit)
+values ('3', 'Winston', '10000');
+insert into Users (user_id, user_name, credit)
+values ('4', 'Luis', '800');
+insert into Users (account, name)
+values ('900001', 'Alice');
+insert into Users (account, name)
+values ('900002', 'Bob');
+insert into Users (account, name)
+values ('900003', 'Charlie');
+insert into Users (user_id, user_name)
+values ('6', 'Alice');
+insert into Users (user_id, user_name)
+values ('2', 'Bob');
+insert into Users (user_id, user_name)
+values ('7', 'Alex');
+insert into Users (user_id, name)
+values ('1', 'aLice');
+insert into Users (user_id, name)
+values ('2', 'bOB');
 SELECT *
 FROM Users;

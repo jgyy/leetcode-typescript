@@ -5,11 +5,12 @@ Create table If Not Exists Customers (
     customer_id int,
     referee_id int,
     product_key int,
-    name varchar(255),
+    name varchar(40),
     visited_on date,
     amount int,
-    customer_name varchar(20),
-    email varchar(30)
+    customer_name varchar(30),
+    email varchar(30),
+    country varchar(30)
 );
 Truncate table Customers;
 insert into Customers (id, name)
@@ -72,5 +73,61 @@ insert into Customers (customer_id, customer_name, email)
 values ('13', 'John', 'john@leetcode.com');
 insert into Customers (customer_id, customer_name, email)
 values ('6', 'Alex', 'alex@leetcode.com');
+insert into Customers (customer_id, customer_name)
+values ('1', 'Daniel');
+insert into Customers (customer_id, customer_name)
+values ('2', 'Diana');
+insert into Customers (customer_id, customer_name)
+values ('3', 'Elizabeth');
+insert into Customers (customer_id, customer_name)
+values ('4', 'Jhon');
+insert into Customers (customer_id, name, country)
+values ('1', 'Winston', 'USA');
+insert into Customers (customer_id, name, country)
+values ('2', 'Jonathan', 'Peru');
+insert into Customers (customer_id, name, country)
+values ('3', 'Moustafa', 'Egypt');
+insert into Customers (customer_id, name)
+values ('1', 'Winston');
+insert into Customers (customer_id, name)
+values ('2', 'Jonathan');
+insert into Customers (customer_id, name)
+values ('3', 'Annabelle');
+insert into Customers (customer_id, name)
+values ('4', 'Marwan');
+insert into Customers (customer_id, name)
+values ('5', 'Khaled');
+insert into Customers (customer_id, name)
+values ('1', 'Winston');
+insert into Customers (customer_id, name)
+values ('2', 'Jonathan');
+insert into Customers (customer_id, name)
+values ('3', 'Annabelle');
+insert into Customers (customer_id, name)
+values ('4', 'Marwan');
+insert into Customers (customer_id, name)
+values ('5', 'Khaled');
+insert into Customers (customer_id, name)
+values ('1', 'Alice');
+insert into Customers (customer_id, name)
+values ('2', 'Bob');
+insert into Customers (customer_id, name)
+values ('3', 'Tom');
+insert into Customers (customer_id, name)
+values ('4', 'Jerry');
+insert into Customers (customer_id, name)
+values ('5', 'John');
+insert into Customers (customer_id, customer_name)
+values ('101', 'Alice');
+insert into Customers (customer_id, customer_name)
+values ('102', 'Bob');
+insert into Customers (customer_id, customer_name)
+values ('103', 'Charlie');
+insert into Customers (customer_id, customer_name)
+values ('1', 'Alice');
+insert into Customers (customer_id, customer_name)
+values ('4', 'Bob');
+insert into Customers (customer_id, customer_name)
+values ('5', 'Charlie');
 SELECT *
 FROM Customers;

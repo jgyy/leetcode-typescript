@@ -4,7 +4,6 @@ Create table If Not Exists Employees (
     id int,
     department_id int,
     manager_id int,
-    employee_id int,
     team_id int,
     name varchar(30),
     company varchar(255),
@@ -12,7 +11,11 @@ Create table If Not Exists Employees (
     supervisor int,
     month int,
     salary int,
-    experience_years int
+    experience_years int,
+    age int,
+    event_day date,
+    in_time int,
+    out_time int
 );
 Truncate table Employees;
 insert into Employees (id, salary)
@@ -159,17 +162,45 @@ insert into Employees (id, name, manager_id)
 values ('9', 'Angela', '8');
 insert into Employees (id, name, manager_id)
 values ('77', 'Robert', '1');
-insert into Employees (employee_id, team_id)
+insert into Employees (id, team_id)
 values ('1', '8');
-insert into Employees (employee_id, team_id)
+insert into Employees (id, team_id)
 values ('2', '8');
-insert into Employees (employee_id, team_id)
+insert into Employees (id, team_id)
 values ('3', '8');
-insert into Employees (employee_id, team_id)
+insert into Employees (id, team_id)
 values ('4', '7');
-insert into Employees (employee_id, team_id)
+insert into Employees (id, team_id)
 values ('5', '9');
-insert into Employees (employee_id, team_id)
+insert into Employees (id, team_id)
 values ('6', '9');
+insert into Employees (id, name)
+values ('1', 'Alice');
+insert into Employees (id, name)
+values ('7', 'Bob');
+insert into Employees (id, name)
+values ('11', 'Meir');
+insert into Employees (id, name)
+values ('90', 'Winston');
+insert into Employees (id, name)
+values ('3', 'Jonathan');
+insert into Employees (id, name, supervisor, age)
+values ('9', 'Hercy', NULL, '43');
+insert into Employees (id, name, supervisor, age)
+values ('6', 'Alice', '9', '41');
+insert into Employees (id, name, supervisor, age)
+values ('4', 'Bob', '9', '36');
+insert into Employees (id, name, supervisor, age)
+values ('2', 'Winston', NULL, '37');
+insert into Employees (id, event_day, in_time, out_time)
+values ('1', '2020-11-28', '4', '32');
+insert into Employees (id, event_day, in_time, out_time)
+values ('1', '2020-11-28', '55', '200');
+insert into Employees (id, event_day, in_time, out_time)
+values ('1', '2020-12-3', '1', '42');
+insert into Employees (id, event_day, in_time, out_time)
+values ('2', '2020-11-28', '3', '33');
+insert into Employees (id, event_day, in_time, out_time)
+values ('2', '2020-12-9', '47', '74');
 SELECT *
 FROM Employees;
