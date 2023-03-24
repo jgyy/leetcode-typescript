@@ -4,22 +4,23 @@ Create table Products (
     id int,
     name varchar(50),
     category varchar(40),
-    product_key int,
-    unit_price int,
-    new_price int,
+    price int,
     change_date date,
     description varchar(30),
-    price int,
     Width int,
     Length int,
     Height int,
     low_fats ENUM('Y', 'N'),
-    recyclable ENUM('Y', 'N')
+    recyclable ENUM('Y', 'N'),
+    store ENUM('store1', 'store2', 'store3'),
+    store1 int,
+    store2 int,
+    store3 int
 );
 Truncate table Products;
-insert into Products (product_key)
+insert into Products (id)
 values ('5');
-insert into Products (product_key)
+insert into Products (id)
 values ('6');
 insert into Products (id, name)
 values ('100', 'Nokia');
@@ -27,23 +28,23 @@ insert into Products (id, name)
 values ('200', 'Apple');
 insert into Products (id, name)
 values ('300', 'Samsung');
-insert into Products (id, name, unit_price)
+insert into Products (id, name, price)
 values ('1', 'S8', '1000');
-insert into Products (id, name, unit_price)
+insert into Products (id, name, price)
 values ('2', 'G4', '800');
-insert into Products (id, name, unit_price)
+insert into Products (id, name, price)
 values ('3', 'iPhone', '1400');
-insert into Products (id, new_price, change_date)
+insert into Products (id, price, change_date)
 values ('1', '20', '2019-08-14');
-insert into Products (id, new_price, change_date)
+insert into Products (id, price, change_date)
 values ('2', '50', '2019-08-14');
-insert into Products (id, new_price, change_date)
+insert into Products (id, price, change_date)
 values ('1', '30', '2019-08-15');
-insert into Products (id, new_price, change_date)
+insert into Products (id, price, change_date)
 values ('1', '35', '2019-08-16');
-insert into Products (id, new_price, change_date)
+insert into Products (id, price, change_date)
 values ('2', '65', '2019-08-17');
-insert into Products (id, new_price, change_date)
+insert into Products (id, price, change_date)
 values ('3', '20', '2019-08-18');
 insert into Products (id, name, category)
 values ('1', 'Leetcode Solutions', 'Book');
@@ -107,5 +108,19 @@ insert into Products (id, low_fats, recyclable)
 values ('3', 'Y', 'Y');
 insert into Products (id, low_fats, recyclable)
 values ('4', 'N', 'N');
+insert into Products (id, store, price)
+values ('0', 'store1', '95');
+insert into Products (id, store, price)
+values ('0', 'store3', '105');
+insert into Products (id, store, price)
+values ('0', 'store2', '100');
+insert into Products (id, store, price)
+values ('1', 'store1', '70');
+insert into Products (id, store, price)
+values ('1', 'store3', '80');
+insert into Products (id, store1, store2, store3)
+values ('0', '95', '100', '105');
+insert into Products (id, store1, store2, store3)
+values ('1', '70', NULL, '80');
 SELECT *
 FROM Products;

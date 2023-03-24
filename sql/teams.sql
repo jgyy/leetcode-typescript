@@ -12,5 +12,11 @@ insert into Teams (team_id, team_name)
 values ('40', 'Chicago FC');
 insert into Teams (team_id, team_name)
 values ('50', 'Toronto FC');
+insert into Teams (team_id, team_name)
+values ('1', 'Ajax');
+insert into Teams (team_id, team_name)
+values ('4', 'Dortmund');
+insert into Teams (team_id, team_name)
+values ('6', 'Arsenal');
 SELECT *
 FROM Teams;

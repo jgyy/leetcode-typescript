@@ -52,5 +52,11 @@ insert into Salaries (company_id, employee_id, employee_name, salary)
 values ('3', '13', 'Nyancat', '3300');
 insert into Salaries (company_id, employee_id, employee_name, salary)
 values ('3', '15', 'Morninngcat', '7777');
+insert into Salaries (employee_id, salary)
+values ('5', '76071');
+insert into Salaries (employee_id, salary)
+values ('1', '22517');
+insert into Salaries (employee_id, salary)
+values ('4', '63539');
 SELECT *
 FROM Salaries;

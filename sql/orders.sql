@@ -5,17 +5,17 @@ Create table If Not Exists Orders (
     customer_id int,
     date date,
     sales_id int,
-    book_id int,
+    product_id int,
     cost int,
     quantity int,
     item_id varchar(30),
     buyer_id int,
     seller_id int,
-    product_id int,
     unit int,
     product_name varchar(30),
     invoice int,
-    sale_date date
+    sale_date date,
+    order_type int
 );
 Truncate table Orders;
 insert into Orders (id, customer_id)
@@ -38,19 +38,19 @@ insert into Orders (id, date, customer_id, sales_id, cost)
 values ('3', '2014-1-3', '1', '1', '50000');
 insert into Orders (id, date, customer_id, sales_id, cost)
 values ('4', '2014-1-4', '1', '4', '25000');
-insert into Orders (id, book_id, quantity, date)
+insert into Orders (id, product_id, quantity, date)
 values ('1', '1', '2', '2018-07-26');
-insert into Orders (id, book_id, quantity, date)
+insert into Orders (id, product_id, quantity, date)
 values ('2', '1', '1', '2018-11-05');
-insert into Orders (id, book_id, quantity, date)
+insert into Orders (id, product_id, quantity, date)
 values ('3', '3', '8', '2019-06-11');
-insert into Orders (id, book_id, quantity, date)
+insert into Orders (id, product_id, quantity, date)
 values ('4', '4', '6', '2019-06-05');
-insert into Orders (id, book_id, quantity, date)
+insert into Orders (id, product_id, quantity, date)
 values ('5', '4', '5', '2019-06-20');
-insert into Orders (id, book_id, quantity, date)
+insert into Orders (id, product_id, quantity, date)
 values ('6', '5', '9', '2009-02-02');
-insert into Orders (id, book_id, quantity, date)
+insert into Orders (id, product_id, quantity, date)
 values ('7', '5', '8', '2010-04-13');
 insert into Orders (
         id,
@@ -398,5 +398,21 @@ insert into Orders (
         seller_id
     )
 values ('5', '2019-02-11', '700', '101', '2');
+insert into Orders (id, customer_id, order_type)
+values ('1', '1', '0');
+insert into Orders (id, customer_id, order_type)
+values ('2', '1', '0');
+insert into Orders (id, customer_id, order_type)
+values ('11', '2', '0');
+insert into Orders (id, customer_id, order_type)
+values ('12', '2', '1');
+insert into Orders (id, customer_id, order_type)
+values ('21', '3', '1');
+insert into Orders (id, customer_id, order_type)
+values ('22', '3', '0');
+insert into Orders (id, customer_id, order_type)
+values ('31', '4', '1');
+insert into Orders (id, customer_id, order_type)
+values ('32', '4', '1');
 SELECT *
 FROM Orders;

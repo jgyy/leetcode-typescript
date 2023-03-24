@@ -5,7 +5,9 @@ Create table If Not Exists Calls (
     callee_id int,
     duration int,
     from_id int,
-    to_id int
+    to_id int,
+    recipient_id int,
+    call_time datetime
 );
 Truncate table Calls;
 insert into Calls (caller_id, callee_id, duration)

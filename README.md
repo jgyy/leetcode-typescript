@@ -8,6 +8,6 @@ solving leetcode problems in typescript
 
 ## SQL number
 
-start from 1777, use mysql.
+start from 2252, use mysql.
 
 mysql -u root -e "source ./sql/address.sql"

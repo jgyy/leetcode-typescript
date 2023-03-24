@@ -3,7 +3,9 @@ DROP TABLE IF EXISTS Ads;
 Create table If Not Exists Ads (
     ad_id int,
     user_id int,
-    action ENUM('Clicked', 'Viewed', 'Ignored')
+    action ENUM('Clicked', 'Viewed', 'Ignored'),
+    customer_id int,
+    timestamp int
 );
 Truncate table Ads;
 insert into Ads (ad_id, user_id, action)
@@ -26,5 +28,11 @@ insert into Ads (ad_id, user_id, action)
 values ('2', '11', 'Viewed');
 insert into Ads (ad_id, user_id, action)
 values ('1', '2', 'Clicked');
+insert into Ads (ad_id, customer_id, timestamp)
+values ('1', '1', '5');
+insert into Ads (ad_id, customer_id, timestamp)
+values ('2', '2', '17');
+insert into Ads (ad_id, customer_id, timestamp)
+values ('3', '2', '20');
 SELECT *
 FROM Ads;

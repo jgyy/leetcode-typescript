@@ -5,7 +5,9 @@ Create Table If Not Exists Rides (
     user_id int,
     distance int,
     ride_id int,
-    requested_at date
+    requested_at date,
+    driver_id int,
+    passenger_id int
 );
 Truncate table Rides;
 insert into Rides (id, user_id, distance)
@@ -56,5 +58,17 @@ insert into Rides (ride_id, user_id, requested_at)
 values ('12', '11', '2021-1-19');
 insert into Rides (ride_id, user_id, requested_at)
 values ('14', '18', '2021-1-27');
+insert into Rides (ride_id, driver_id, passenger_id)
+values ('1', '7', '1');
+insert into Rides (ride_id, driver_id, passenger_id)
+values ('2', '7', '2');
+insert into Rides (ride_id, driver_id, passenger_id)
+values ('3', '11', '1');
+insert into Rides (ride_id, driver_id, passenger_id)
+values ('4', '11', '7');
+insert into Rides (ride_id, driver_id, passenger_id)
+values ('5', '11', '7');
+insert into Rides (ride_id, driver_id, passenger_id)
+values ('6', '11', '3');
 SELECT *
 FROM Rides;

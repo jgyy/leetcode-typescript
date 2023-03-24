@@ -98,5 +98,15 @@ insert into Users (user_id, name)
 values ('1', 'aLice');
 insert into Users (user_id, name)
 values ('2', 'bOB');
+insert into Users (user_id, mail, name)
+values ('1', 'sarah@leetcode.com', 'Sarah');
+insert into Users (user_id, mail, name)
+values ('2', 'bob@leetcode.com', 'Bob');
+insert into Users (user_id, mail, name)
+values ('3', 'alice@leetcode.com', 'Alice');
+insert into Users (user_id, mail, name)
+values ('4', 'hercy@leetcode.com', 'Hercy');
+insert into Users (user_id, mail, name)
+values ('5', 'quarz@leetcode.com', 'Quarz');
 SELECT *
 FROM Users;
