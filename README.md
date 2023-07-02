@@ -11,3 +11,5 @@ solving leetcode problems in typescript
 start from 2252, use mysql.
 
 mysql -u root -e "source ./sql/address.sql"
+
+dont think can finish this anytime soon
